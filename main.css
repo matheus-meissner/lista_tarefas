@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./images/fundo-3d-com-cubos-brancos.jpg);
+    background-size: cover;
+    font-family: "Imbue", serif;
+    font-weight: 400;
+}
+
+.container {
+    margin-top: 1vh;
+    /* position: fixed; */
+    border-width: 2px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: black;
+    padding: 11px 27px;
+    backdrop-filter: blur(5px); /* Adiciona um efeito de desfoque ao fundo */
+    background-color: transparent; /* Define uma cor de fundo semitransparente */
+    max-height: 730px;
+    overflow-y: auto;
+}
+
+header h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 50px;
+    font-style: italic;
+    text-transform: uppercase;
+    position: sticky;
+    z-index: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, button {
+    padding: 9px;
+    border-radius: 7px;
+    border: black solid 2px;
+}
+
+form input {
+    background-color: black;
+    margin-bottom: 7px;
+    color: #fff;
+    text-align: center;
+}
+
+form input::placeholder {
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+
+form button {
+    background-color: black;
+    color: #fff;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: darkgray;
+    color: black;
+}
+
+form input:hover {
+    background-color: darkgray;
+    color: black;
+}
+
+form input:hover::placeholder{
+    color: black;
+}
+
+form input:focus::placeholder {
+    color: transparent; /* Define a cor do placeholder como transparente quando o input está focado */
+}
+
+h2 {
+    text-align: center;
+    display: none;
+}
+
+ul {
+    font-size: x-large;
+    text-align: center;
+    list-style: none;
+    margin-bottom: 17px;
+}
+
+ul li p {
+    padding: 1px;
+    font-style: italic;
+}
+
+ul li p:hover {
+    text-decoration: line-through white;
+    cursor: pointer;
+}
+
+.linha {
+    text-decoration: line-through white;
+}
